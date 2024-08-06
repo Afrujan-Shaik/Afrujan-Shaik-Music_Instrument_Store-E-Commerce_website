@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.nav navbar-nav{
+    font-size: large;
+    text-align:justify;
+    justify-content: flex-end;
+    margin-left: 20px;
+}
+.afru{
+    background: radial-gradient(circle,rgb(216, 165, 185),
+    skyblue,rgb(217, 233, 236),rgb(217, 233, 236),rgb(105, 213, 228));
+    color: rgb(15, 70, 71);
+}
+.navbar-brand{
+    text-shadow: 5px 5px 10px cyan,
+    10px 10px 20px rgb(6, 59, 59);
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header {
+	background-color:transparent;
+	padding: 20px;
+	text-align: center;
+}
+header nav ul li {
+  margin-left: 20px;
+}
+.container-fluid{
+    padding: 2%;
+}
+.cls1{
+    margin: 30px;
+}
+.foot{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+}

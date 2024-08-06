@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music_Rhythm</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .nav navbar-nav {
+        font-size: large;
+        text-align: justify;
+        justify-content: flex-end;
+        margin-left: 20px;
+    }
+    .afru {
+        background: linear-gradient(to right, rgb(204, 49, 139), rgb(231, 207, 218), rgb(169, 219, 238));
+        color: rgb(15, 70, 71);
+    }
+    .navbar-brand {
+        text-shadow: 5px 5px 10px cyan, 10px 10px 20px rgb(6, 59, 59);
+        font-size: xx-large;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    header {
+        background-color: transparent;
+        padding: 20px;
+        text-align: center;
+    }
+    header nav ul li {
+        margin-left: 20px;
+    }
+    .container-fluid {
+        padding: 2%;
+    }
+    .foot {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #ccc;
+        padding: 20px;
+        text-align: center;
+    }
+    .contact-form {
+        margin-top: 20px;
+    }
+    .contact-form h2 {
+        margin-bottom: 20px;
+    }
+    .contact-form .form-group {
+        margin-bottom: 15px;
+    }
+    .contact-form .form-control {
+        border-radius: 5px;
+    }
+    </style>
+</head>
+<body class="afru">
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">MUSIC RHYTHM</a> 
+                </div>
+                <ul class="nav navbar-nav"> 
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="2products.html">Products</a></li>
+                    <li><a href="3cart.html">Cart</a></li>
+                    <li><a href="4contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="search-bar">
+            <input type="search" placeholder="Search...">
+            <button type="submit">Search</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="submit_contact_form.php" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </main>
+    <br><br><br><br><br><br>
+    <footer>
+        <div class="foot">
+            &copy; 2024: All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>

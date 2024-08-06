@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <title>Music_Rhythm</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .nav navbar-nav{
+            font-size: large;
+            text-align:justify;
+            justify-content: flex-end;
+            margin-left: 20px;
+        }
+        .afru{
+            background: linear-gradient(to right, rgb(83, 81, 83),rgb(231, 207, 218),rgb(169, 219, 238));
+            color: rgb(15, 70, 71);
+        }
+        .navbar-brand{
+            text-shadow: 5px 5px 10px cyan,
+            10px 10px 20px rgb(6, 59, 59);
+            font-size: xx-large;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        header {
+            background-color:transparent;
+            padding: 20px;
+            text-align: center;
+        }
+        header nav ul li {
+          margin-left: 20px;
+        }
+        .container-fluid{
+            padding: 2%;
+        }
+        .foot{
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #ccc;
+            padding: 20px;
+            text-align: center;
+        }
+        .product-info {
+            margin-top: 20px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+        .cls1 {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            top: 20px;
+        }
+        .product-info img {
+            width: 500px;
+            height: 500px;
+        }
+        .ratings {
+            color: #f39c12; /* Star color */
+        }
+        </style>
+    </head>
+    <body class="afru">
+        <header>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                       <a class ="navbar-brand" href="#">MUSIC RHYTHM</a> 
+                    </div>
+                <ul class="nav navbar-nav"> 
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="2products.html">Products</a></li>
+                    <li><a href="3cart.html">Cart</a></li>
+                    <li><a href="4contact.html">Contact</a></li>
+                </ul>
+            </div>
+            </nav>
+            <div class="search-bar">
+                <input type="search" placeholder="Search...">
+                <button type="submit">Search</button></div>
+            </div>
+        </header>
+
+
+        <div class="container">
+            
+            <div class="product-info">
+                <h2>Tambourine</h2>
+                <div class="cls1">
+                <a href="A1Guiter.html" class="btn btn-info" id="left-btn">Previous</a>
+                <a href="A3Drums.html" class="btn btn-info" id="right-btn">Next</a>
+            </div><br>
+                <img src="tb2.jpg" alt="Tambourine">
+                <p><strong>Cost:</strong> Rs.13999.99</p>
+                <p><strong>Quantity Available:</strong> 25</p>
+                <p><strong>Description:</strong> This Tambourine features a sleek design and high-quality sound, perfect for both beginners and professionals. Made with premium materials for durability and tone.</p>
+                <div class="ratings">
+                    <strong>Ratings:</strong>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                </div>
+                <p><strong>Reviews:</strong></p>
+                <ul>
+                    <li>"Amazing sound quality!" - John D.</li>
+                    <li>"Great value for the price." - Jane S.</li>
+                    <li>"The Tambourine arrived in perfect condition." - Alice W.</li>
+                </ul>
+                <a href="SignUp.html" class="btn btn-success">Buy Now</a>
+            </div>
+        </div>
+        <br><br><br>
+        <footer>
+            <div class="foot">
+                &copy 2024 : all the rights are reserved for only us.
+            </div>
+        </footer>
+    </body>
+</html>

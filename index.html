@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Rhythm</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="a.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .search-bar {
+            padding: 10px;
+            text-align: center;
+        }
+        .search-bar input[type="search"] {
+            width: 80%;
+            padding: 10px;
+        }
+        .search-bar button {
+            padding: 10px 20px;
+            margin-left: 10px;
+        }
+        .cls1 {
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+        .cls1 h4 {
+            text-align: center;
+            color: #333;
+        }
+        .btn-info a {
+            color: white;
+            text-decoration: none;
+        }
+        .btn-info {
+            margin: 10px 0;
+        }
+        .best-sellers, .offers {
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .best-sellers h3, .offers h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: large;
+        }
+        .best-sellers .row img, .offers .row img {
+            width: 400px;
+            height: 440px;
+        }
+        .best-sellers .btn-primary, .offers .btn-primary {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            text-align: center;
+        }
+        footer {
+            background-color: #f8f8f8;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+        }
+    </style>
+</head>
+<body class="afru">
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                   <a class="navbar-brand" href="#">MUSIC RHYTHM</a> 
+                </div>
+                <ul class="nav navbar-nav"> 
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="2products.html">Products</a></li>
+                    <li><a href="3cart.html">Cart</a></li>
+                    <li><a href="4contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="search-bar">
+            <input type="search" id="searchQuery" placeholder="Search...">
+            <button type="button" onclick="itemSearch()">Search</button>
+        </div>
+    </header>
+    <div class="cls1">
+        <h4>Welcome Shopper</h4>
+        <p><strong>Welcome to Music Rhythm, where passion meets harmony!</strong><br>
+        At Music Rhythm, we're dedicated to nurturing your musical journey. 
+        Whether you're a seasoned professional or a budding musician, our store offers a
+        n extensive selection of instruments, from guitars and keyboards to drums and brass. 
+        Explore our curated collection of sheet music, accessories, and high-quality sound 
+        equipment, all designed to inspire and elevate your performance.
+        <br>
+        Our knowledgeable staff are musicians themselves, ready to provide personalized advice 
+        and help you find exactly what you need. We believe in fostering a vibrant musical community,
+        so join us for regular workshops, live performances, and events that celebrate the joy of making music.
+        <br>
+        Come visit us and experience the perfect blend of expertise, passion, and a love for music 
+        that defines Music Rhythm. 
+        Let us help you create the soundtrack to your life!<br><br>
+        <button type="button" class="btn btn-info"><a href="2products.html">Explore Now</a></button>
+        </p>
+    </div>
+    <div class="offers">
+        <h3>Special Offers</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="gu3.webp" alt="Offer 1">
+                    <p>25% off on all Guitars</p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="dr1.jpg" alt="Offer 2">
+                    <p>Buy 2 Get 1 Free on Drums</p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="sx2.jpeg" alt="Offer 3">
+                    <p>Save Rs.399 on Saxophones</p>
+                </div>
+            </div>
+        </div>
+        <a href="2products.html" class="btn btn-primary">See All Offers</a>
+    </div>
+    <div class="best-sellers">
+        <h3>Best Sellers</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="gu3.webp" alt="Best Seller 1">
+                    <p>Guitar</p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="pi1.jpeg" alt="Best Seller 2">
+                    <p>Piano</p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="si1.jpeg" alt="Best Seller 3">
+                    <p>Sitar</p>
+                </div>
+            </div>
+        </div>
+        <a href="2products.html" class="btn btn-primary">Explore More</a>
+    </div>
+    <footer>
+        <div class="foot">
+            &copy; 2024 : All rights are reserved for only us.
+        </div>
+    </footer>
+    <script>
+        function itemSearch() {
+            const query = document.getElementById('searchQuery').value.toLowerCase();
+            if (query === 'guitar') {
+                window.location = 'A1Guiter.html';
+            } else if (query === 'piano') {
+                window.location.href = './A2Piano.html';
+            } else if (query === 'drum') {
+                window.location.href = 'drum.html';
+            } else if (query === 'sitar') {
+                window.location.href = 'sitar.html';
+            } else {
+                alert('No results found for your query.');
+            }
+        }
+    </script>
+</body>
+</html>

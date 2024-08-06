@@ -1,0 +1,185 @@
+<html>
+    <head>
+        <title>Music_Rhythm</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .nav navbar-nav{
+            font-size: large;
+            text-align:justify;
+            justify-content: flex-end;
+            margin-left: 20px;
+        }
+        .afru{
+            background: linear-gradient(to right, rgb(204, 49, 139),rgb(231, 207, 218),rgb(169, 219, 238));
+            color: rgb(15, 70, 71);
+        }
+        .navbar-brand{
+            text-shadow: 5px 5px 10px cyan,
+            10px 10px 20px rgb(6, 59, 59);
+            font-size: xx-large;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        header {
+            background-color:transparent;
+            padding: 20px;
+            text-align: center;
+        }
+        header nav ul li {
+          margin-left: 20px;
+        }
+        .container-fluid{
+            padding: 2%;
+        }
+        .form-group{
+            font-size: medium;
+        }
+        .foot{
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #ccc;
+            padding: 20px;
+            text-align: center;
+        }
+        </style>
+    </head>
+    <body class="afru">
+        <header>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                       <a class ="navbar-brand" href="index.html">MUSIC RHYTHM</a> 
+                    </div>
+                <ul class="nav navbar-nav"> 
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="2products.html">Products</a></li>
+                    <li><a href="3cart.html">Cart</a></li>
+                    <li><a href="4contact.html">Contact</a></li>
+                </ul>
+            </div>
+            </nav>
+            <div class="search-bar">
+                <input type="search" placeholder="Search...">
+                <button type="submit">Search</button></div>
+            </div>
+        </header>
+            <div class="container">
+                <center><h1>Sign-In to order now</h1></center><br>
+                <form class="form-horizontal" action="RegistrationSuccess.html" method="post">
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="email">Email:</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                        </div>
+                    </div><br>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="pwd">Password:</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" required>
+                        </div>
+                    </div><br>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="remember"> Remember me</label>
+                            </div>
+                        </div>
+                    </div><br>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="name">Name:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name" required>
+                        </div>
+                    </div><br>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="dob">Date of Birth:</label>
+                        <div class="col-sm-10">
+                            <input type="date" class="form-control" id="dob" name="dob" required>
+                        </div>
+                    </div><br>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="age">Age:</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" id="age" name="age" min="0" required>
+                        </div>
+                    </div><br>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2">Gender:</label>
+                        <div class="col-sm-10">
+                            <label class="radio-inline"><input type="radio" name="gender" value="m"> Male</label>
+                            <label class="radio-inline"><input type="radio" name="gender" value="f"> Female</label>
+                            <label class="radio-inline"><input type="radio" name="gender" value="o"> Others</label>
+                        </div>
+                    </div><br>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="phone">Mobile No:</label>
+                        <div class="col-sm-10">
+                            <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{10}" title="The ten digits number" required>
+                        </div>
+                    </div><br>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="emailList">Email:</label>
+                        <div class="col-sm-10">
+                            <input list="emailList" class="form-control" id="emailList" name="emailList" required>
+                            <datalist id="emailList">
+                                <option value="afru@gmail.com">
+                                <option value="afru@yahoo.com">
+                                <option value="afru@hotmail.com">
+                                <option value="afru@mail.com">
+                            </datalist>
+                        </div>
+                    </div><br>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="instrument">Instrument:</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" id="instrument" name="instrument">
+                                <option value="">Select an instrument</option>
+                                <option value="Tambourine">Tambourine</option>
+                                <option value="Drums">Drums</option>
+                                <option value="Harmonica">Harmonica</option>
+                                <option value="Keyboard Instrument">Keyboard Instrument</option>
+                                <option value="Mridangam">Mridangam</option>
+                                <option value="Piano">Piano</option>
+                                <option value="Sitar">Sitar</option>
+                                <option value="Saxophone">Saxophone</option>
+                                <option value="Tabala">Tabala</option>
+                                <option value="Trumpet">Trumpet</option>
+                                <option value="Flute">Flute</option>
+                                <option value="Violin">Violin</option>
+                                <option value="Guitar">Guitar</option>
+                            </select>
+                        </div>
+                    </div><br>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2">Languages:</label>
+                        <div class="col-sm-10">
+                            <label class="checkbox-inline"><input type="checkbox" name="languages" value="Telugu"> Telugu</label>
+                            <label class="checkbox-inline"><input type="checkbox" name="languages" value="Hindi"> Hindi</label>
+                            <label class="checkbox-inline"><input type="checkbox" name="languages" value="English"> English</label>
+                        </div>
+                    </div><br>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="address">Address:</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" id="address" name="address" rows="5" placeholder="Enter your permanent address" required></textarea>
+                        </div>
+                    </div><br>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <a href="OrderConform.html"><button type="submit" class="btn btn-default">Submit</button></a>
+                        </div>
+                    </div>
+                </form>
+            </div><br><br><br>
+        <footer>
+            <div class="foot">
+                &copy 2024 : all the rights are reserved for only us.
+            </div>
+        </footer>
+    </body>
+</html>
